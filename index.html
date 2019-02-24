@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>project</title>
-    <link rel="stylesheet" href="styleshit.css">
-    <link rel="stylesheet" media="screen and (max-device-width:480px)" href="styleshit-mobile.css" >
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" media="screen and (max-width: 480px)" href="stylesheet-mobile.css">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -17,7 +17,7 @@
         <div class="header-logo">
             <span>Startup</span>
         </div>
-        <nav class="header-menu">
+        <nav class="header-menu header-menu-mobile">
             <ul>
                 <li>Home</li>
                 <li>Service</li>
@@ -28,11 +28,16 @@
                 <li>Contact</li>
             </ul>
         </nav>
+        <div class="hamburger-menu">
+            <div class="hamburger-menu-dash"></div>
+            <div class="hamburger-menu-dash"></div>
+            <div class="hamburger-menu-dash"></div>
+        </div>
     </div>
 </header>
 <main>
-    <section class="top">
 
+    <section class="top">
         <div class="top-internal">
             <h1 class="top-title"> WELCOME TO STARTUP </h1>
             <p class="top-subtitle">Youre Favourite Create Agency Template</p>
@@ -286,21 +291,21 @@
     </section>
 
     <section class="latest-works">
-            <div class="title-works-titles">
-                <h3 class="title-works-title">LATEST WORKS</h3>
+        <div class="title-works-titles">
+            <h3 class="title-works-title">LATEST WORKS</h3>
             <div class="dash"></div>
 
 
-                <div class="latest-works-menu">
-                    <ul>
-                        <li>All</li>
-                        <li>Branding</li>
-                        <li>Design</li>
-                        <li>Developmen</li>
-                        <li>Strategy</li>
-                    </ul>
-                </div>
+            <div class="latest-works-menu">
+                <ul>
+                    <li>All</li>
+                    <li>Branding</li>
+                    <li>Design</li>
+                    <li>Developmen</li>
+                    <li>Strategy</li>
+                </ul>
             </div>
+        </div>
         <div class="works-images">
             <div class="works-img">
                 <img src="images/latest-works1.jpg" alt="img">
@@ -316,7 +321,12 @@
                 <div class="works-images-hover">
                     <span class="works-images-hover-title">Hair dresser</span>
                     <span>Branding</span>
-                    <a href="#" class="works-images-hover-a">view ></a>
+                    <a href="#" class="works-images-hover-a">view
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg">
+                            <path d="M-0.000,9.168 C-0.000,9.258 0.041,9.338 0.103,9.399 L0.619,9.900 C0.680,9.960 0.773,10.000 0.856,10.000 C0.938,10.000 1.031,9.960 1.093,9.900 L5.897,5.230 C5.959,5.170 6.000,5.080 6.000,5.000 C6.000,4.920 5.959,4.830 5.897,4.769 L1.093,0.100 C1.031,0.040 0.938,-0.000 0.856,-0.000 C0.773,-0.000 0.680,0.040 0.619,0.100 L0.103,0.601 C0.041,0.661 -0.000,0.751 -0.000,0.832 C-0.000,0.912 0.041,1.002 0.103,1.062 L4.155,5.000 L0.103,8.937 C0.041,8.998 -0.000,9.088 -0.000,9.168 Z"></path>
+                        </svg>
+                    </a>
                 </div>
             </div>
             <div class="works-img">
@@ -488,9 +498,7 @@
         </div>
         <div class="slider-bottom-texts">
 
-            <span class="slider-bottom-text1">Hvaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
-
-</span>
+            <span class="slider-bottom-text1">Hvaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</span>
             <span class="slider-bottom-text2">Temporibus autem quibusdam et aut officiis debitis aut rerum”</span>
             <span class="slider-bottom-text3">John Doe, Google Inc.</span>
 
@@ -559,19 +567,17 @@
         </div>
         <div class="footer-icon">
             <svg xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
-                      d="M1.585,3.779 C1.585,5.066 2.030,5.994 2.907,6.539 C3.625,6.987 4.460,7.053 4.893,7.053 C4.998,7.053 5.082,7.050 5.141,7.046 C5.141,7.046 5.004,7.910 5.667,8.765 L5.637,8.765 C4.487,8.765 0.737,8.997 0.737,11.974 C0.737,15.002 4.182,15.156 4.873,15.156 C4.927,15.156 4.958,15.156 4.958,15.156 C4.966,15.156 5.015,15.158 5.099,15.158 C5.543,15.158 6.689,15.104 7.754,14.604 C9.135,13.957 9.835,12.831 9.835,11.258 C9.835,9.738 8.768,8.834 7.989,8.172 C7.513,7.769 7.102,7.421 7.102,7.083 C7.102,6.738 7.402,6.479 7.782,6.151 C8.397,5.620 8.976,4.865 8.976,3.437 C8.976,2.182 8.807,1.340 7.769,0.805 C7.877,0.752 8.260,0.712 8.449,0.687 C9.012,0.613 9.835,0.529 9.835,0.085 L9.835,-0.001 L5.733,-0.001 C5.692,0.000 1.585,0.147 1.585,3.779 ZM8.207,11.541 C8.285,12.753 7.212,13.647 5.601,13.760 C3.964,13.875 2.617,13.164 2.538,11.954 C2.500,11.373 2.765,10.802 3.283,10.349 C3.809,9.890 4.531,9.606 5.316,9.550 C5.409,9.545 5.500,9.541 5.592,9.541 C7.107,9.541 8.132,10.400 8.207,11.541 ZM7.136,2.950 C7.538,4.317 6.930,5.746 5.962,6.009 C5.851,6.039 5.735,6.055 5.619,6.055 C4.732,6.055 3.853,5.188 3.527,3.995 C3.345,3.324 3.360,2.738 3.569,2.175 C3.774,1.620 4.142,1.245 4.606,1.119 C4.717,1.089 4.833,1.074 4.949,1.074 C6.020,1.074 6.709,1.502 7.136,2.950 ZM14.047,5.927 L14.047,3.343 L12.352,3.343 L12.352,5.927 L9.676,5.927 L9.676,7.563 L12.352,7.563 L12.352,10.147 L14.047,10.147 L14.047,7.563 L16.724,7.563 L16.724,5.927 L14.047,5.927 Z"></path>
+                <path d="M1.585,3.779 C1.585,5.066 2.030,5.994 2.907,6.539 C3.625,6.987 4.460,7.053 4.893,7.053 C4.998,7.053 5.082,7.050 5.141,7.046 C5.141,7.046 5.004,7.910 5.667,8.765 L5.637,8.765 C4.487,8.765 0.737,8.997 0.737,11.974 C0.737,15.002 4.182,15.156 4.873,15.156 C4.927,15.156 4.958,15.156 4.958,15.156 C4.966,15.156 5.015,15.158 5.099,15.158 C5.543,15.158 6.689,15.104 7.754,14.604 C9.135,13.957 9.835,12.831 9.835,11.258 C9.835,9.738 8.768,8.834 7.989,8.172 C7.513,7.769 7.102,7.421 7.102,7.083 C7.102,6.738 7.402,6.479 7.782,6.151 C8.397,5.620 8.976,4.865 8.976,3.437 C8.976,2.182 8.807,1.340 7.769,0.805 C7.877,0.752 8.260,0.712 8.449,0.687 C9.012,0.613 9.835,0.529 9.835,0.085 L9.835,-0.001 L5.733,-0.001 C5.692,0.000 1.585,0.147 1.585,3.779 ZM8.207,11.541 C8.285,12.753 7.212,13.647 5.601,13.760 C3.964,13.875 2.617,13.164 2.538,11.954 C2.500,11.373 2.765,10.802 3.283,10.349 C3.809,9.890 4.531,9.606 5.316,9.550 C5.409,9.545 5.500,9.541 5.592,9.541 C7.107,9.541 8.132,10.400 8.207,11.541 ZM7.136,2.950 C7.538,4.317 6.930,5.746 5.962,6.009 C5.851,6.039 5.735,6.055 5.619,6.055 C4.732,6.055 3.853,5.188 3.527,3.995 C3.345,3.324 3.360,2.738 3.569,2.175 C3.774,1.620 4.142,1.245 4.606,1.119 C4.717,1.089 4.833,1.074 4.949,1.074 C6.020,1.074 6.709,1.502 7.136,2.950 ZM14.047,5.927 L14.047,3.343 L12.352,3.343 L12.352,5.927 L9.676,5.927 L9.676,7.563 L12.352,7.563 L12.352,10.147 L14.047,10.147 L14.047,7.563 L16.724,7.563 L16.724,5.927 L14.047,5.927 Z"></path>
             </svg>
         </div>
         <div class="footer-icon">
             <svg xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
-                      d="M3.181,4.549 L0.173,4.549 L0.173,14.000 L3.181,14.000 L3.181,4.549 ZM3.372,1.630 C3.363,0.705 2.725,-0.000 1.695,-0.000 C0.674,-0.000 -0.000,0.705 -0.000,1.630 C-0.000,2.536 0.647,3.261 1.659,3.261 L1.677,3.261 L1.677,3.261 C2.725,3.261 3.381,2.536 3.372,1.630 ZM14.000,8.583 C14.000,5.683 12.523,4.329 10.546,4.329 C8.923,4.329 8.212,5.273 7.820,5.922 L7.838,5.922 L7.838,4.549 L4.840,4.549 C4.840,4.549 4.876,5.436 4.840,14.000 L4.840,14.000 L7.838,14.000 L7.838,8.726 C7.838,8.440 7.866,8.163 7.939,7.953 C8.157,7.391 8.650,6.809 9.479,6.809 C10.564,6.809 11.001,7.676 11.001,8.945 L11.001,14.000 L14.000,14.000 L14.000,8.583 Z"></path>
+                <path d="M3.181,4.549 L0.173,4.549 L0.173,14.000 L3.181,14.000 L3.181,4.549 ZM3.372,1.630 C3.363,0.705 2.725,-0.000 1.695,-0.000 C0.674,-0.000 -0.000,0.705 -0.000,1.630 C-0.000,2.536 0.647,3.261 1.659,3.261 L1.677,3.261 L1.677,3.261 C2.725,3.261 3.381,2.536 3.372,1.630 ZM14.000,8.583 C14.000,5.683 12.523,4.329 10.546,4.329 C8.923,4.329 8.212,5.273 7.820,5.922 L7.838,5.922 L7.838,4.549 L4.840,4.549 C4.840,4.549 4.876,5.436 4.840,14.000 L4.840,14.000 L7.838,14.000 L7.838,8.726 C7.838,8.440 7.866,8.163 7.939,7.953 C8.157,7.391 8.650,6.809 9.479,6.809 C10.564,6.809 11.001,7.676 11.001,8.945 L11.001,14.000 L14.000,14.000 L14.000,8.583 Z"></path>
             </svg>
         </div>
     </div>
     <div class="footer-dash"></div>
-    <p>© 2015 Startup, Designed by ShapedTheme</p>
+    <p>© 2019 Startup, Designed by M.13</p>
 </footer>
 
 
