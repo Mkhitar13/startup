@@ -1,9 +1,17 @@
 const hamburgerMenu = document.querySelector(".hamburger-menu");
-const top1 = document.querySelector(".top");
 const headerMenu = document.querySelector(".header-menu");
 
 hamburgerMenu.addEventListener("click",function () {
-    top1.style.display = "none";
+    if (headerMenu.style.display === 'none'){
+        headerMenu.style.display = "block";
+        headerMenu.style.height = "100vh";
 
+    }
+    else {
+        headerMenu.style.display = "none";
+        headerMenu.style.height = "100vh";
+        headerMenu.style.transformtransition = "3s";
+
+    }
 
 });
