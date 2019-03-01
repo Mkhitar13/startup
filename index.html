@@ -12,20 +12,20 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 </head>
 <body>
-<header class="header-scroll">
-    <div class="header-internal header-internal-2">
+<header>
+    <div class="header-internal">
         <div class="header-logo">
             <span>Startup</span>
         </div>
-        <nav class="header-menu header-menu-mobile">
+        <nav class="header-menu">
             <ul>
-                <li>Home</li>
-                <li>Service</li>
-                <li>About</li>
-                <li>Worcs</li>
-                <li>Blog</li>
-                <li>Clients</li>
-                <li>Contact</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#clients">Clients</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="hamburger-menu">
@@ -37,7 +37,7 @@
 </header>
 <main>
 
-    <section class="top">
+    <section class="top" id="home">
         <div class="top-internal">
             <h1 class="top-title"> WELCOME TO STARTUP </h1>
             <p class="top-subtitle">Youre Favourite Create Agency Template</p>
@@ -45,7 +45,7 @@
         </div>
     </section>
 
-    <section class="services">
+    <section class="services" id="service">
         <div class="services-titles">
             <h3 class="services-title">SERVICES</h3>
             <div class="dash"></div>
@@ -94,7 +94,7 @@
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="about-titles">
             <h3 class="about-title">ABOUT US</h3>
             <div class="dash"></div>
@@ -222,7 +222,7 @@
 
     </section>
 
-    <section class="latest-works">
+    <section class="latest-works" id="works">
         <div class="title-works-titles">
             <h3 class="title-works-title">LATEST WORKS</h3>
             <div class="dash"></div>
@@ -231,15 +231,15 @@
             <div class="latest-works-menu">
                 <ul>
                     <li>All</li>
-                    <li>Branding</li>
-                    <li>Design</li>
-                    <li>Developmen</li>
-                    <li>Strategy</li>
+                    <li class="opacity-branding">Branding</li>
+                    <li class="opacity-design">Design</li>
+                    <li class="opacity-developmen">Developmen</li>
+                    <li class="opacity-strategy">Strategy</li>
                 </ul>
             </div>
         </div>
         <div class="works-images">
-            <div class="works-img">
+            <div class="works-img branding">
                 <img src="images/latest-works1.jpg" alt="img">
                 <div class="works-images-hover">
                     <span class="works-images-hover-title">Hair dresser</span>
@@ -249,7 +249,7 @@
                 </div>
 
             </div>
-            <div class="works-img">
+            <div class="works-img design">
                 <img src="images/latest-works2.jpg" alt="img">
                 <div class="works-images-hover">
                     <span class="works-images-hover-title">Hair dresser</span>
@@ -257,7 +257,7 @@
                     <a href="#" class="works-images-hover-a">view<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path  d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg></a>
                 </div>
             </div>
-            <div class="works-img">
+            <div class="works-img Branding">
                 <img src="images/latest-works3.jpg" alt="img">
                 <div class="works-images-hover">
                     <span class="works-images-hover-title">Hair dresser</span>
@@ -266,7 +266,7 @@
                     </a>
                 </div>
             </div>
-            <div class="works-img">
+            <div class="works-img design">
                 <img src="images/latest-works4.jpg" alt="img">
                 <div class="works-images-hover">
                     <span class="works-images-hover-title">Hair dresser</span>
@@ -275,7 +275,7 @@
                     </a>
                 </div>
             </div>
-            <div class="works-img">
+            <div class="works-img developmen">
                 <img src="images/latest-works5.jpg" alt="img">
                 <div class="works-images-hover">
                     <span class="works-images-hover-title">Hair dresser</span>
@@ -284,7 +284,7 @@
                     </a>
                 </div>
             </div>
-            <div class="works-img">
+            <div class="works-img strategy">
                 <img src="images/latest-works6.jpg" alt="img">
                 <div class="works-images-hover">
                     <span class="works-images-hover-title">Hair dresser</span>
@@ -293,7 +293,7 @@
                     </a>
                 </div>
             </div>
-            <div class="works-img">
+            <div class="works-img developmen">
                 <img src="images/latest-works7.jpg" alt="img">
                 <div class="works-images-hover">
                     <span class="works-images-hover-title">Hair dresser</span>
@@ -302,7 +302,7 @@
                     </a>
                 </div>
             </div>
-            <div class="works-img">
+            <div class="works-img strategy">
                 <img src="images/latest-works8.jpg" alt="img">
                 <div class="works-images-hover">
                     <span class="works-images-hover-title">Hair dresser</span>
@@ -311,7 +311,7 @@
                     </a>
                 </div>
             </div>
-            <div class="works-img">
+            <div class="works-img developmen">
                 <img src="images/latest-works9.jpg" alt="img">
                 <div class="works-images-hover">
                     <span class="works-images-hover-title">Hair dresser</span>
@@ -333,7 +333,7 @@
         </div>
     </section>
 
-    <section class="blog">
+    <section class="blog" id="blog">
 
 
         <div class="blog-titles">
@@ -422,7 +422,7 @@
 
 
     </section>
-    <section class="slider-bottom">
+    <section class="slider-bottom" id="clients">
         <div class="brands">
             <div class="brand"><img src="images/brand1.png" alt="img"></div>
             <div class="brand"><img src="images/brand2.png" alt="img"></div>
@@ -445,7 +445,7 @@
         </div>
 
     </section>
-    <section>
+    <section id="contact">
         <div class="information-title">
             <h4>GET IN TOUCH</h4>
             <div class="dash"></div>
@@ -478,7 +478,7 @@
                            placeholder="COMPANY NAME">
                 </div>
                 <div class="registration-line">
-                    <input type="tel" id="inp-message" name="inp-message" placeholder="WRITE YOUR MESSAGE">
+                    <input type="text" id="inp-message" name="inp-message" placeholder="WRITE YOUR MESSAGE">
                     <div class="information-btn registration-line">
                         <button>SEND MESSAGE</button>
                         <span class="registration-epilogue"> * We’ll contact you as as possible. We don’t reply on Monday..</span>
