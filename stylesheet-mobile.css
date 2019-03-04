@@ -1,7 +1,4 @@
 
-
-
-
 .hamburger-menu {
     position: fixed;
     top: 15px;
@@ -13,13 +10,17 @@
     align-content: space-between;
 
 }
+
 .hamburger-menu-dash {
     width: 60%;
     height: 7px;
     background-color: white;
     border-radius: 30%;
 }
+
 .header-menu {
+    display: flex;
+    align-items: center;
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -29,28 +30,51 @@
     background: black;
     opacity: 0.9;
     color: white;
-    transition: 3s;
+    transition: 1s;
 }
-.header-menu-mobile {
-    height: 100%;
-    font-size: 3em;
-}
-.header-menu-mobile ul{
+.header-menu ul {
     width: 100%;
     display: flex;
-    align-content: space-between;
-    text-align: center ;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     position: absolute;
 }
+
+.header-menu ul li {
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+
+}
+
+.header-menu-mobile {
+    height: 100%;
+    font-size: 3em;
+    display: flex;
+    align-items: center;
+}
+
+.header-menu-mobile ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    position: absolute;
+}
+
 .header-menu-mobile ul li {
     margin: 0;
     padding: 0;
     font-size: 50px;
     color: white;
     display: block;
-    line-height: 120px;
 }
+
 .header-menu-mobile ul li:hover {
     color: darkred;
 }
@@ -59,29 +83,30 @@
     width: 100%;
 }
 
-
-.latest-works ul  {
+.latest-works ul {
     display: block;
 }
-
-
 
 .blog-subtitle {
     width: 100vh;
     display: block;
 }
-.blog-titles{
+
+.blog-titles {
     display: block;
 }
+
 .blog-img {
     display: block;
     width: 100%;
     min-height: 200px;
 }
+
 .blog-text {
     display: block;
     width: 100%;
     margin: 0;
+    text-align: center;
 }
 
 .services-structure {
@@ -89,6 +114,15 @@
     flex-direction: column;
 }
 
-.brands{
+.brands {
     display: none;
+}
+
+.about-text {
+    flex-direction: column;
+    text-align: center;
+}
+
+.slider-bottom-texts {
+    text-align: center;
 }
