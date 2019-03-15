@@ -1,91 +1,14 @@
-const headerInternal = document.querySelector(".header-internal");
 const header = document.querySelector("header");
 const hamburgerMenu = document.querySelector(".hamburger-menu");
-const headerMenuMobile = document.querySelector(".header-menu-mobile");
 const headerMenu = document.querySelector(".header-menu");
-const branding = document.querySelector(".branding");
-const design = document.querySelector(".design");
-const development = document.querySelector(".development");
-const strategy = document.querySelector(".strategy");
-const opacityBranding = document.querySelector(".opacity-branding");
-const opacityDesign = document.querySelector(".opacity-design");
-const opacityDevelopment = document.querySelector(".opacity-development");
-const opacitystrategy = document.querySelector(".opacity-strategy");
-const filters = document.querySelectorAll(".filters");
-const worksImages = document.querySelector(".works-images");
-const worksImage = document.querySelectorAll(".works-img");
-const innerText3 = document.querySelector(".inner-text3");
-const innerText2 = document.querySelector(".inner-text2");
-const innerText1 = document.querySelector(".inner-text1");
-const dot1 = document.querySelector(".dot1");
-const dot2 = document.querySelector(".dot2");
-const dot3 = document.querySelector(".dot3");
+const dot = document.querySelectorAll(".dot");
+const innerText = document.querySelectorAll(".inner-text");
+const sliderStructure = document.querySelector(".slider-structure");
+const prev = document.querySelector(".prev");
+const next = document.querySelector(".next");
+const sliderParagraph = document.querySelectorAll(".slider-paragraph");
 
-function a(x) {
-    if (x.style.display === "none") {
-        x.style.display = "";
-
-        function f1() {
-
-            x.style.transition = "1s";
-            x.style.opacity = "1";
-        }
-
-        setTimeout(f1, 4);
-    }
-    else {
-        x.style.opacity = "0";
-        x.style.transition = "1.5s";
-
-        function f() {
-            x.style.display = "none";
-        }
-
-        setTimeout(f, 500);
-    }
-}
-
-for (let i = 0; i < filters.length; i++) {
-    filters[i].addEventListener("click", filterWorks);
-}
-
-function filterWorks() {
-    var c = this.getAttribute("data-work");
-    for (let i = 0; i < worksImages.length; i++) {
-        if (worksImages[i].classList.contains(c)) {
-
-        }
-        else {
-            worksImages[i].style.opacity = "0";
-            worksImages[i].style.transition = "1.5s";
-
-            function f() {
-                worksImages[i].style.display = "none";
-            }
-
-            setTimeout(f, 500);
-        }
-    }
-}
-
-
-    dot1.addEventListener("click", function () {
-        innerText1.style.display = "none";
-    });
-
-    dot2.addEventListener("click", function () {
-        innerText2.style.display = "none";
-    });
-
-    dot3.addEventListener("click", function () {
-        innerText3.style.display = "none";
-    });
-
-
-
-
-
-
+// navigation dark
 
 window.addEventListener("scroll", function () {
     let s = document.documentElement.scrollTop;
@@ -96,19 +19,51 @@ window.addEventListener("scroll", function () {
         header.classList.remove("header-scroll");
     }
 });
-hamburgerMenu.addEventListener("click",function () {
+
+
+// hamburgerMenu show mobile
+
+hamburgerMenu.addEventListener("click", function () {
     headerMenu.classList.toggle("header-menu-mobile");
 });
 
-opacityDesign.addEventListener("click", function () {
-    design.style.opacity = "0";
-    design.style.display = "none";
-});
-opacityDevelopment.addEventListener("click", function () {
-    development.style.opacity = "0";
-    development.style.display = "none";
-});
-opacitystrategy.addEventListener("click", function () {
-    strategy.style.opacity = "0";
-    strategy.style.display = "none";
-});
+
+
+// slider-bottom
+
+for (let i = 0; i < dot.length; i++) {
+    dot[i].addEventListener("click", slideShow);
+}
+
+function slideShow() {
+    for (let i = 0; i < dot.length; i++) {
+        if (this === dot[i]) {
+            let x = innerText[i];
+            innerText[i].classList.add("show");
+        }
+        else {
+            let x = innerText[i];
+            innerText[i].classList.remove("show");
+        }
+    }
+}
+
+// slider-top
+
+
+//
+// prev.addEventListener("click", sliderPrev);
+// next.addEventListener("click", sliderNext);
+//
+// function sliderPrev() {
+//     sliderStructure.style = "transform: translate(-250px);";
+//     for (let i = 0; i < sliderParagraph.length; i++){
+//         if (sliderParagraph[i] === sliderParagraph.length) {
+//             sliderParagraph[i] = sliderParagraph[0];
+//         }
+//     }
+// }
+//
+// function sliderNext() {
+//     sliderStructure.style = "transform: translate(250px);";
+// }

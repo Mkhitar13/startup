@@ -162,7 +162,7 @@ header span:hover {
 
 .dash {
     height: 2px;
-    width: 3%;
+    width: 100px;
     background-color: #575757;
     margin: 2% auto;
 }
@@ -614,40 +614,37 @@ header span:hover {
 
 .slider-bottom-texts {
     width: 100%;
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 3%;
 }
-
 .slider-bottom-text3 {
-    margin: 3%;
+    margin: 1%;
     font-size: 22px;
 }
-
 .slider-bottom-text2 {
     margin: 1%;
 }
-.inner-text1,.inner-text2,.inner-text3{
-    text-align: center;
+.inner-text{
+    opacity: 0;
     font-family: 'Roboto Slab', serif;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
     width: 100%;
     position: absolute;
-    top: 50%;
+    top: 1%;
     left: 50%;
     transform: translate(-50%, -50%);
-
+    transition: 1s;
 }
 
 .slider-bottom-dot {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 0;
     display: flex;
     width: 100px;
-    margin: 1% auto;
 }
 
 .slider-bottom-dot div {
@@ -660,6 +657,9 @@ header span:hover {
 .slider-bottom-dot div:hover{
     background-color: #FFFFFF;
     cursor: pointer;
+}
+.show {
+    opacity: 1;
 }
 .information-field {
     display: flex;
@@ -684,7 +684,6 @@ header span:hover {
     width: 43%;
     height: 20px;
     padding: 8px;
-
 }
 
 #inp-message {
@@ -696,6 +695,7 @@ header span:hover {
 }
 .registration-line {
     margin-top: 3%;
+
 }
 
 .reg {
@@ -727,7 +727,7 @@ footer {
 .footer-dash {
     background-color: #FFFFFF;
     height: 2px;
-    width: 3%;
+    width: 100px;
     margin: 1% auto;
 }
 
@@ -737,6 +737,7 @@ footer {
 }
 
 .footer-icon {
+    margin: 10px;
     padding: 10px;
     width: 20px;
     height: 20px;
