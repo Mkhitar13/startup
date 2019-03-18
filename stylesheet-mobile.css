@@ -109,13 +109,27 @@
     display: flex;
     flex-direction: column;
 }
-
+.services-paragraph{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.icon-content {
+    margin: 3%;
+}
+.services-text {
+    margin-bottom: 3%;
+}
 .about-text {
     flex-direction: column;
     text-align: center;
 }
-
-
+.get-in-touch-title {
+    font-size: 20px;
+}
+.get-in-touch-subtitle {
+    font-size: 15px;
+}
 .brand {
     margin: 11px;
     width: 70px;
@@ -127,18 +141,48 @@
     width: 100px;
     margin: 5% auto;
 }
-/*.information {*/
-    /*width: 100%;*/
-    /*display: flex;*/
-    /*flex-direction: row;*/
-/*}*/
-/*.registration {*/
-    /*width: 100%;*/
-/*}*/
-/*.contact {*/
-    /*width: 25%;*/
-/*}*/
-/*.contacts {*/
-    /*display: flex;*/
-    /*align-content: space-between;*/
-/*}*/
+.slider-bottom-dot {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+}
+.information-field {
+    display: block;
+}
+.information {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    bottom: 20px;
+}
+.information h3{
+    margin: 20px;
+}
+.contact{
+    margin: 25px 0 25px;
+    width: 400px;
+}
+.registration {
+    margin: 0 auto;
+    width: 90%;
+}
+.registration input{
+    border: black solid 2px;
+}
+.registration-epilogue {
+    display: block;
+    text-align: center;
+}
+
+#inp-message {
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.registration-line button{
+    display: block;
+    margin: 10px auto;
+}
