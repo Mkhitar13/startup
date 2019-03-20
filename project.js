@@ -3,10 +3,6 @@ const hamburgerMenu = document.querySelector(".hamburger-menu");
 const headerMenu = document.querySelector(".header-menu");
 const dot = document.querySelectorAll(".dot");
 const innerText = document.querySelectorAll(".inner-text");
-const sliderStructure = document.querySelector(".slider-structure");
-const prev = document.querySelector(".prev");
-const next = document.querySelector(".next");
-const sliderParagraph = document.querySelectorAll(".slider-paragraph");
 
 // navigation dark
 
@@ -50,20 +46,11 @@ function slideShow() {
 
 // slider-top
 
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+        items: 3
+    });
 
-//
-// prev.addEventListener("click", sliderPrev);
-// next.addEventListener("click", sliderNext);
-//
-// function sliderPrev() {
-//     sliderStructure.style = "transform: translate(-250px);";
-//     for (let i = 0; i < sliderParagraph.length; i++){
-//         if (sliderParagraph[i] === sliderParagraph.length) {
-//             sliderParagraph[i] = sliderParagraph[0];
-//         }
-//     }
-// }
-//
-// function sliderNext() {
-//     sliderStructure.style = "transform: translate(250px);";
-// }
+
+
+});

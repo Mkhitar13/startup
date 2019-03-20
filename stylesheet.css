@@ -580,34 +580,34 @@ header span:hover {
 .blog-content2:hover .blog-hover {
     color: #C0301C;
 }
-
 .line {
     height: 2px;
     background-color: #575757;
     margin: 2% auto;
     width: 100%;
 }
-
 .slider-bottom {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    min-height: 400px;
+    min-height: 40vh;
     background-color: #F8F8F8;
     color: #575757;
     position: relative;
 }
 
 .brands {
+    height: 60px;
     margin: 3% auto;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-
 .brand {
-    margin: 5%;
-    width: 200px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
 }
-
 .slider-bottom-texts span {
     font-family: 'Roboto Slab', serif;
     display: flex;
@@ -617,8 +617,8 @@ header span:hover {
 
 .slider-bottom-texts {
     width: 100%;
-    position: relative;
-    top: 50%;
+    position: absolute;
+    top: 0;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -638,18 +638,21 @@ header span:hover {
     font-family: 'Roboto Slab', serif;
     width: 70%;
     position: absolute;
-    top: 1%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: 1s;
 }
+.slider-bottom-contraction{
+    position: relative;
+    width: 100%;
+}
 
 .slider-bottom-dot {
     position: absolute;
-    top: 92%;
+    bottom: 20px;
     left: 50%;
     transform: translate(-50%, -50%);
-    bottom: 0;
     display: flex;
     width: 100px;
 }
@@ -663,10 +666,10 @@ header span:hover {
 }
 
 .slider-bottom-dot div:hover {
-    background-color: #FFFFFF;
+    background-color: #C0301C;
     cursor: pointer;
+    transition: 1s;
 }
-
 .show {
     opacity: 1;
 }
