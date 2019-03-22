@@ -413,13 +413,12 @@ header span:hover {
 
 .latest-works-menu {
     margin: 0 auto;
-    width: 50%;
     display: flex;
     justify-content: center;
 }
 
 .latest-works-menu ul {
-    width: 50%;
+    width: 30%;
     display: flex;
     justify-content: space-between;
 }

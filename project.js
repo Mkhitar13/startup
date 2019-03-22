@@ -23,8 +23,6 @@ hamburgerMenu.addEventListener("click", function () {
     headerMenu.classList.toggle("header-menu-mobile");
 });
 
-
-
 // slider-bottom
 
 for (let i = 0; i < dot.length; i++) {
@@ -48,9 +46,20 @@ function slideShow() {
 
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
-        items: 3
+        items: 4
     });
-
-
-
 });
+
+
+function f(){
+    var z = [44, 3, 6, 2, 5, 7, 3, 34];
+    var x ;
+    for(var i = 0; i < z.length; i++){
+
+        if(z[i] > z[i+1]){
+            x = z[i];
+        }
+    }
+    return x;
+}
+alert(f());
