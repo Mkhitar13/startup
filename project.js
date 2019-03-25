@@ -23,6 +23,8 @@ hamburgerMenu.addEventListener("click", function () {
     headerMenu.classList.toggle("header-menu-mobile");
 });
 
+
+
 // slider-bottom
 
 for (let i = 0; i < dot.length; i++) {
@@ -33,11 +35,11 @@ function slideShow() {
     for (let i = 0; i < dot.length; i++) {
         if (this === dot[i]) {
             let x = innerText[i];
-            innerText[i].classList.add("show");
+            x.classList.add("show");
         }
         else {
             let x = innerText[i];
-            innerText[i].classList.remove("show");
+            x.classList.remove("show");
         }
     }
 }
@@ -46,20 +48,36 @@ function slideShow() {
 
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
-        items: 4
+        items: 4,
+        margin: 20,
+        loop: true,
+        mouseDrag: true
     });
 });
 
+// filter
 
-function f(){
-    var z = [44, 3, 6, 2, 5, 7, 3, 34];
-    var x ;
-    for(var i = 0; i < z.length; i++){
+var grid = $('.grid').isotope({
+    itemSelector: '.grid-item',
+    layoutMode: 'fitRows'
+});
 
-        if(z[i] > z[i+1]){
-            x = z[i];
-        }
-    }
-    return x;
-}
-alert(f());
+$('.filter li').on("click", function () {
+   var value = $(this).attr('data.name');
+       grid.isotope({
+        filter:value
+    })
+});
+
+
+// $grid.isotope({ filter: '.branding' });
+//
+// $grid.isotope({ filter: '.design' });
+//
+// $grid.isotope({ filter: '.development' });
+//
+// $grid.isotope({ filter: '.strategy' });
+//
+// $grid.isotope({ filter: '*' });
+//
+// $grid.isotope({ filter: '.metal:not(.transition)' });
