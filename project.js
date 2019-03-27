@@ -51,33 +51,75 @@ $(document).ready(function(){
         items: 4,
         margin: 20,
         loop: true,
-        mouseDrag: true
+        mouseDrag: true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:4
+            }
+        }
     });
 });
 
 // filter
 
 var grid = $('.grid').isotope({
-    itemSelector: '.grid-item',
-    layoutMode: 'fitRows'
+    itemSelector: '.grid-item'
 });
 
 $('.filter li').on("click", function () {
-   var value = $(this).attr('data.name');
+   var value = $(this).attr('data-work');
        grid.isotope({
         filter:value
     })
 });
 
+// ----------------------------------
 
-// $grid.isotope({ filter: '.branding' });
-//
-// $grid.isotope({ filter: '.design' });
-//
-// $grid.isotope({ filter: '.development' });
-//
-// $grid.isotope({ filter: '.strategy' });
-//
-// $grid.isotope({ filter: '*' });
-//
-// $grid.isotope({ filter: '.metal:not(.transition)' });
+// function func(x) {
+//     console.log(x/100 + " metr");
+// }
+// func(580);
+
+
+// function func(x) {
+//     console.log(x/1000 + " tonna");
+// }
+// func(5800);
+
+
+
+function func(x,y) {
+    console.log(parseInt(x/y)*y);
+}
+func(1000,300);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,23 +1,10 @@
-.grid-item {
-    float: left;
-    width: 400px;
-    height: 400px;
-    background: #e6e5e4;
-    border: 2px solid #b6b5b4;
-}
-
-.grid-item--width2 { width: 400px; }
-
-
 * {
     margin: 0;
     padding: 0;
 }
-
 img {
     width: 100%;
 }
-
 header {
     min-height: 50px;
     width: 100%;
@@ -30,25 +17,20 @@ header {
     padding-bottom: 1%;
     transition: 1s;
 }
-
 a {
     text-decoration: none;
     color: inherit;
 }
-
 .header-scroll {
     background: black;
     opacity: 0.8;
 }
-
 .header-internal {
     align-items: center;
     display: flex;
     justify-content: space-between;
     width: 70%;
-
 }
-
 .header-logo {
     cursor: pointer;
     font-size: 24px;
@@ -56,11 +38,9 @@ a {
     font-weight: bold;
     color: #FFFFFF;
 }
-
 .header-menu {
     width: 40%;
 }
-
 .header-menu ul {
     display: flex;
     justify-content: space-between;
@@ -269,7 +249,6 @@ header span:hover {
 .slider-structure {
     display: flex;
     justify-content: space-between;
-    width: 999999999px;
 }
 
 .slider-img {
@@ -315,6 +294,19 @@ header span:hover {
 .slider-arrow {
     fill: #878787;
 }
+.works-images {
+    width: 70%;
+    margin: 0 auto;
+}
+.works-img{
+    height: 300px;
+    display: block;
+    margin: 20px;
+}
+.works-img img{
+    max-height: 300px;
+    margin: 0 auto;
+}
 .works-images-hover {
     visibility: hidden;
     position: absolute;
@@ -352,13 +344,6 @@ header span:hover {
     height: 10px;
     margin-left: 2%;
 }
-
-.works-img {
-    width: 450px;
-    margin: 20px auto;
-    position: relative;
-}
-
 .works-img:hover::before {
     content: "";
     position: absolute;
@@ -411,15 +396,6 @@ header span:hover {
     color: #c0301c;
     transition: 0.2s;
 }
-
-.works-images {
-    width: 70%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
 .get-in-touch {
     position: relative;
     color: #FFFFFF;
@@ -580,6 +556,7 @@ header span:hover {
     flex-wrap: wrap;
 }
 .brand {
+    width: 15%;
     margin: 10px;
     display: flex;
     align-items: center;
@@ -680,6 +657,7 @@ header span:hover {
 }
 
 #inp-message {
+    border: black solid 1px;
     box-sizing: border-box;
     padding: 10px;
     width: 100%;
@@ -747,4 +725,27 @@ footer {
     fill: white;
     width: 20px;
     height: 20px;
+}
+@media (min-width:480px){
+    .slider-bottom {
+        /*min-height: 70vh;*/
+    }
+}
+@media (max-width: 480px){
+    .slider-bottom {
+        min-height: 5vh;
+    }
+    .brand {
+        width: 18%;
+        margin: 20px;
+    }
+    .inner-text {
+        font-size: 17px;
+    }
+}
+@media (max-width: 700px){
+    .slider-img {
+        width: 1400px;
+        height: 1400px;
+    }
 }
