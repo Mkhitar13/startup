@@ -74,10 +74,6 @@
 .header-menu-mobile ul li:hover {
     color: darkred;
 }
-
-.slider-img{
-    height: 140px;
-}
 .slider-img svg {
     margin: 0 auto;
     padding: 0;

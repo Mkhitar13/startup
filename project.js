@@ -57,9 +57,12 @@ $(document).ready(function(){
                 items:1
             },
             600:{
-                items:3
+                items:2
             },
             1000:{
+                items:3
+            },
+            1500:{
                 items:4
             }
         }
@@ -94,11 +97,10 @@ $('.filter li').on("click", function () {
 
 
 
-function func(x,y) {
-    console.log(parseInt(x/y)*y);
-}
-func(1000,300);
-
+// function func(x,y) {
+//     console.log(parseInt(x/y)*y);
+// }
+// func(1000,300);
 
 
 
