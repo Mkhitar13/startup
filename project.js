@@ -24,7 +24,6 @@ hamburgerMenu.addEventListener("click", function () {
 });
 
 
-
 // slider-bottom
 
 for (let i = 0; i < dot.length; i++) {
@@ -46,24 +45,24 @@ function slideShow() {
 
 // slider-top
 
-$(document).ready(function(){
+$(document).ready(function () {
     $(".owl-carousel").owlCarousel({
         items: 4,
         margin: 20,
         loop: true,
         mouseDrag: true,
-        responsive:{
-            0:{
-                items:1
+        responsive: {
+            0: {
+                items: 1
             },
-            600:{
-                items:2
+            600: {
+                items: 2
             },
-            1000:{
-                items:3
+            1000: {
+                items: 3
             },
-            1500:{
-                items:4
+            1500: {
+                items: 4
             }
         }
     });
@@ -72,35 +71,23 @@ $(document).ready(function(){
 // filter
 
 var grid = $('.grid').isotope({
-    itemSelector: '.grid-item'
+    itemSelector: '.grid-item',
+    // layoutMode: 'fitRows',
+    /*fitRows: {
+        gutter: 10
+    },*/
+    masonry: {
+        columnWidth: 200,
+        isFitWidth: true
+    }
 });
 
 $('.filter li').on("click", function () {
-   var value = $(this).attr('data-work');
-       grid.isotope({
-        filter:value
+    var value = $(this).attr('data-work');
+    grid.isotope({
+        filter: value
     })
 });
-
-// ----------------------------------
-
-// function func(x) {
-//     console.log(x/100 + " metr");
-// }
-// func(580);
-
-
-// function func(x) {
-//     console.log(x/1000 + " tonna");
-// }
-// func(5800);
-
-
-
-// function func(x,y) {
-//     console.log(parseInt(x/y)*y);
-// }
-// func(1000,300);
 
 
 

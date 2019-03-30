@@ -20,7 +20,7 @@ header {
     transition: 1s;
 }
 
-a {
+a{
     text-decoration: none;
     color: inherit;
 }
@@ -313,7 +313,9 @@ header span:hover {
     margin: 20px auto;
 }
 
-
+.name {
+    margin: 15px 0 15px;
+}
 
 .works-images-hover {
     visibility: hidden;
@@ -743,7 +745,6 @@ footer {
     height: 20px;
 }
 
-
 @media (max-width: 480px) {
     .slider-bottom {
         min-height: 95vh;
@@ -757,9 +758,11 @@ footer {
     .inner-text {
         font-size: 17px;
     }
-    .reg input{
+
+    .reg input {
         margin: 5px;
     }
+
     .works-img {
         min-width: 0;
         margin: 5px;
@@ -773,30 +776,57 @@ footer {
 
     }
 }
-@media (min-width: 600px) {
+
+@media (min-width: 320px) and (max-width: 420px) {
     .slider-img {
-        height: 400px;
+        height: 230px;
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 421px) and (max-width: 520px) {
     .slider-img {
-        height: 300px;
-    }
-}
-@media (min-width: 1500px) {
-    .slider-img {
-        height: 250px;
-    }
-}
-@media (min-width: 2000px) {
-    .slider-img {
-        height: 480px;
+        height: 290px;
     }
 }
 
-@media (min-width: 3000px) {
+@media (min-width: 521px) and (max-width: 600px) {
     .slider-img {
-        height: 700px;
+        height: 320px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 750px) {
+    .slider-img {
+        height: 200px;
+    }
+}
+
+@media (min-width: 751px) and (max-width: 1100px) {
+    .slider-img {
+        height: 220px;
+    }
+}
+
+@media (min-width: 1101px) and (max-width: 1499px) {
+    .slider-img {
+        height: 240px;
+    }
+}
+
+@media (min-width: 1500px) and (max-width: 1999px) {
+    .slider-img {
+        height: 235px;
+    }
+}
+
+@media (min-width: 2000px) and (max-width: 2500px) {
+    .slider-img {
+        height: 335px;
+    }
+}
+
+@media (min-width: 2501px) and (max-width: 3000px) {
+    .slider-img {
+        height: 425px;
     }
 }
